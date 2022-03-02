@@ -4,3 +4,5 @@
 
 2-bringmehome changes the working directory to the user's home directory
 
+3-listfiles displays current directory in a long format
+
