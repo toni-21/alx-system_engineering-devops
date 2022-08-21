@@ -1,0 +1,291 @@
+# Network basics
+
+Networking is a big part of what made computers so powerful and why the Internet exists. It allows machines to communicate with each other.
+
+# What is a protocol?
+Network protocols are sets of established rules that dictate how to format, transmit and receive data so computer network devices -- from servers and routers to endpoints -- can communicate regardless of the differences in their underlying infrastructures, designs or standards.
+
+To successfully send and receive information, devices on both sides of a communication exchange must accept and follow protocol conventions. Support for network protocols can be built into software, hardware or both.
+
+Standardized network protocols provide a common language for network devices. Without them, computers wouldn't know how to engage with each other. As a result, except for specialty networks built around a specific architecture, few networks would be able to function, and the internet as we know it wouldn't exist. Virtually all network end users rely on network protocols for connectivity.
+
+## How network protocols work
+
+Network protocols break larger processes into discrete, narrowly defined functions and tasks across every level of the network. In the standard model, known as the Open Systems Interconnection (OSI) model, one or more network protocols govern activities at each layer in the telecommunication exchange.
+
+A set of cooperating network protocols is called a protocol suite. The TCP/IP suite includes numerous protocols across layers -- such as the data, network, transport and application layers -- working together to enable internet connectivity. These include:
+
+- Transmission Control Protocol (TCP), which uses a set of rules to exchange messages with other internet points at the information packet level;
+- User Datagram Protocol (UDP), which acts as an alternative communication protocol to TCP and is used to establish low-latency and loss-tolerating connections between applications and the Internet.
+- Internet Protocol (IP), which uses a set of rules to send and receive messages at the Internet address level; and
+- Additional network protocols that include the Hypertext Transfer Protocol (HTTP) and File Transfer Protocol (FTP), each of which has defined sets of rules to exchange and display information.
+
+Every packet transmitted and received over a network contains binary data. Most protocols will add a header at the beginning of each packed in order to store information about the sender and the message's intended destination. Some protocols may also include a footer at the end with additional information. Network protocols process these headers and footers as part of the data moving among devices in order to identify messages of their own kind.
+
+## Network protocols are often set forth in an industry standard -- developed, defined and published by groups such as:
+
+- the International Telecommunication Union 
+- the Institute of Electrical and Electronics Engineers 
+- the Internet Engineering Task Force 
+- the International Organization for Standardization
+- the World Wide Web Consortium.
+- Major types of network protocols
+
+Generally speaking, networks have three types of protocols -- communication, such as Ethernet; management, such as the Simple Mail Transfer Protocol (SMTP); and security, such as Secure Shell (SSH).
+
+Falling into these three broad categories are thousands of network protocols that uniformly handle an extensive variety of defined tasks, including authentication, automation, correction, compression, error handling, file retrieval, file transfer, link aggregation, routing, semantics, synchronization and syntax.
+
+## Implementing network protocols
+
+In order for network protocols to work, they must be coded within software, either a part of the computer's operating system (OS) or as an application, or implemented within the computer's hardware. Most modern operating systems possess built-in software services that are prepared to implement some network protocols. Other applications, such as web browsers, are designed with software libraries that support whatever protocols are necessary for the application to function. Furthermore, TCP/IP and routing protocol support is implemented in direct hardware for enhanced performance.
+
+Whenever a new protocol is implemented, it is added to the protocol suite. The organization of protocol suites is considered to be monolithic since all protocols are stored in the same address and build on top of one another.
+
+## Vulnerabilities of network protocols
+
+One major vulnerability found in network protocols is that they are not designed for security. Their lack of protection can sometimes allow malicious attacks, such as eavesdropping and cache poisoning, to affect the system. The most common attack on network protocols is the advertisement of false routes, causing traffic to go through compromised hosts instead of the appropriate ones.
+
+Network protocol analyzers have been designed and installed in response to these vulnerabilities. Network protocol analyzers protect systems against malicious activity by supplementing firewalls, anti-virus programs and anti-spyware software.
+
+## Uses of network protocols
+
+Network protocols are what make the modern Internet possible since they allow computers to communicate across networks without users having to see or know what background operations are occurring. Some specific examples of network protocols and their uses are:
+
+- Post Office Protocol 3 (POP3), which is the most recent version of a standard protocol that is used for receiving incoming e-mails. Simple main transport Protocol, which is used to send and distribute outgoing e-mails.
+- File Transfer Protocol (FTP), which is used to transfer files from one machine to another.
+- Telnet, which is a collection of rules used to connect one system to another via a remote login. In this protocol, the system that send the request for connection is the local computer and the system that accepts the connection is the remote computer.
+
+Some other network protocol examples include:
+
+- Address Resolution Protocol (ARP)
+- Blocks Extensible Exchange Protocol (BEEP)
+- Border Gateway Protocol(BGP)
+- Binary Synchronous Communications (BSC)
+- Canonical Text Services(CTS)
+- Domain name system(DNS)
+- Dynamic Host Configuration Protocol(DHCP)
+- Enhanced Interior Gateway Routing Protocol(EIGRP)
+- HTTP over SSL
+- Human interface device
+- Internet Control Message Protocol(ICMP)
+- Internet Message Access Protocol(IMAP)
+- Gopher
+- Media access control
+- Network News Transfer Protocol(NNTP)
+- Open Shortest Path First
+- Post Office Protocol(POP)
+- Secure Sockets Layer
+- Simple Mail Transfer Protocol(SMTP)
+- Telnet
+- Terminal Network
+- Thread
+- Transmission Control Protocol(TCP)
+- Transport Layer Security
+- Universal Description, Discovery and Integration
+- User Datagram Protocol(UDP)
+- Voice over IP
+- X10
+
+
+# What is an IP address?
+
+Every machine on a network has a unique identifier. Just as you would address a letter to send in the mail, computers use the unique identifier to send data to specific computers on a network. Most networks today, including all computers on the Internet, use the TCP/IP protocol as the standard for how to communicate on the network. In the TCP/IP protocol, the unique identifier for a computer is called its IP address.
+
+There are two standards for IP addresses: IP Version 4 (IPv4) and IP Version 6 (IPv6). All computers with IP addresses have an IPv4 address, and many are starting to use the new IPv6 address system as well. Here's what these two address types mean:
+
+- IPv4 uses 32 binary bits to create a single unique address on the network. An IPv4 address is expressed by four numbers separated by dots. Each number is the decimal (base-10) representation for an eight-digit binary (base-2) number, also called an octet. For example: 216.27.61.137
+
+- IPv6 uses 128 binary bits to create a single unique address on the network. An IPv6 address is expressed by eight groups of hexadecimal (base-16) numbers separated by colons, as in 2001:cdba:0000:0000:0000:0000:3257:9652. Groups of numbers that contain all zeros are often omitted to save space, leaving a colon separator to mark the gap (as in 2001:cdba::3257:9652).
+At the dawn of IPv4 addressing, the Internet was not the large commercial sensation it is today, and most networks were private and closed off from other networks around the world. When the Internet exploded, having only 32 bits to identify a unique Internet address caused people to panic that we'd run out of IP addresses. Under IPv4, there are 232 possible combinations, which offers just under 4.3 billion unique addresses. IPv6 raised that to a panic-relieving 2128 possible addresses. Later, we'll take a closer look at how to understand your computer's IPv4 or IPv6 addresses.
+
+How does your computer get its IP address? An IP address can be either dynamic or static. A static address is one that you configure yourself by editing your computer's network settings. This type of address is rare, and it can create network issues if you use it without a good understanding of TCP/IP. Dynamic addresses are the most common. They're assigned by the Dynamic Host Configuration Protocol (DHCP), a service running on the network. DHCP typically runs on network hardware such as routers or dedicated DHCP servers.
+
+Dynamic IP addresses are issued using a leasing system, meaning that the IP address is only active for a limited time. If the lease expires, the computer will automatically request a new lease. Sometimes, this means the computer will get a new IP address, too, especially if the computer was unplugged from the network between leases. This process is usually transparent to the user unless the computer warns about an IP address conflict on the network (two computers with the same IP address). An address conflict is rare, and today's technology typically fixes the problem automatically.
+
+Next, let's take a closer look at the important parts of an IP address and the special roles of certain addresses.
+
+
+## IP Classes
+  
+Earlier, you read that IPv4 addresses represent four eight-digit binary numbers. That means that each number could be 00000000 to 11111111 in binary, or 0 to 255 in decimal (base-10). In other words, 0.0.0.0 to 255.255.255.255. However, some numbers in that range are reserved for specific purposes on TCP/IP networks. These reservations are recognized by the authority on TCP/IP addressing, the Internet Assigned Numbers Authority (IANA). Four specific reservations include the following:
+
+0.0.0.0 -- This represents the default network, which is the abstract concept of just being connected to a TCP/IP network.
+255.255.255.255 -- This address is reserved for network broadcasts, or messages that should go to all computers on the network.
+
+127.0.0.1 -- This is called the loopback address, meaning your computer's way of identifying itself, whether or not it has an assigned IP address.
+
+169.254.0.1 to 169.254.255.254 -- This is the Automatic Private IP Addressing (APIPA) range of addresses assigned automatically when a computer's unsuccessful getting an address from a DHCP server.
+The other IP address reservations are for subnet classes. A subnet is a smaller network of computers connected to a larger network through a router. The subnet can have its own address system so computers on the same subnet can communicate quickly without sending data across the larger network. A router on a TCP/IP network, including the Internet, is configured to recognize one or more subnets and route network traffic appropriately. The following are the IP addresses 
+reserved for subnets:
+
+10.0.0.0 to 10.255.255.255 -- This falls within the Class A address range of 1.0.0.0 to 127.0.0.0, in which the first bit is 0.
+
+172.16.0.0 to 172.31.255.255 -- This falls within the Class B address range of 128.0.0.0 to 191.255.0.0, in which the first two bits are 10.
+
+192.168.0.0 to 192.168.255.255 -- This falls within the Class C range of 192.0.0.0 through 223.255.255.0, in which the first three bits are 110.
+
+Multicast (formerly called Class D) -- The first four bits in the address are 1110, with addresses ranging from 224.0.0.0 to 239.255.255.255.
+
+Reserved for future/experimental use (formerly called Class E) -- addresses 240.0.0.0 to 254.255.255.254.
+The first three (within Classes A, B and C) are those most used in creating subnets. Later, we'll see how a subnet uses these addresses. The IANA has outlined specific uses for multicast addresses within Internet Engineering Task Force (IETF) document RFC 5771. However, it hasn't designated a purpose or future plan for Class E addresses since it reserved the block in its 1989 document RFC 1112. Before IPv6, the Internet was filled with debate about whether the IANA should release Class E for general use.
+
+Next, let's see how subnets work and find out who has those non-reserved IP addresses out on the Internet.
+
+## HOW DHCP ASSIGNS ADDRESSES
+
+When you add a computer to a network, that computer uses a four-step process to get an IP address from DHCP:
+
+- Discover -- The computer sends out a broadcast message on the network, hoping to discover a DHCP service provider.
+- Offer -- Each DHCP provider hears the message, recognizes the unique hardware address of the computer, and sends a - message back offering its services to that computer.
+- Request -- The computer selects a DHCP provider from its offerings and then sends a request to that provider asking for an IP address assignment.
+- Acknowledge -- The targeted DHCP provider acknowledges the request and issues an IP address to the computer that doesn't match any other IP addresses currently active on the network.
+
+
+## Internet Addresses and Subnets
+  
+The following is an example of a subnet IP address you might have on your computer at home if you're using a router (wireless or wired) between your ISP connection and your computer:
+
+- IP address: 192.168.1.102
+- Subnet mask: 255.255.255.0
+- Twenty-four bits (three octets) reserved for network identity
+- Eight bits (one octet) reserved for nodes
+- Subnet identity based on subnet mask (first address): 192.168.1.0
+- The reserved broadcast address for the subnet (last address): 192.168.1.255
+- Example addresses on the same network: 192.168.1.1, 192.168.1.103
+- Example addresses not on the same network: 192.168.2.1, 192.168.2.103
+- Besides reserving IP addresses, the IANA is also responsible for assigning blocks of IP addresses to certain entities, - usually commercial or government organizations. Your Internet service provider (ISP) may be one of these entities, or it - may be part of a larger block under the control of one of those entities. In order for you to connect to the Internet, - your ISP will assign you one of these addresses. You can see a full list of IANA assignments and reservations for IPv4 addresses.
+
+If you only connect one computer to the Internet, that computer can use the address from your ISP. Many homes today, though, use routers to share a single Internet connection between multiple computers. Wireless routers have become especially popular in recent years, avoiding the need to run network cables between rooms.
+
+If you use a router to share an Internet connection, the router gets the IP address issued directly from the ISP. Then, it creates and manages a subnet for all the computers connected to that router. If your computer's address falls into one of the reserved subnet ranges listed earlier, you're going through a router rather than connecting directly to the Internet.
+
+IP addresses on a subnet have two parts: network and node. The network part identifies the subnet itself. The node, also called the host, is an individual piece of computer equipment connected to the network and requiring a unique address. Each computer knows how to separate the two parts of the IP address by using a subnet mask. A subnet mask looks somewhat like an IP address, but it's actually just a filter used to determine which part of an IP address designates the network and node.
+
+A subnet mask consists of a series of 1 bits followed by a series of 0 bits. The 1 bits indicate those that should mask the network bits in the IP address, revealing only those that identify a unique node on that network. In the IPv4 standard, the most commonly used subnet masks have complete octets of 1s and 0s as follows:
+
+- 255.0.0.0.0 = 11111111.00000000.00000000.00000000 = eight bits for networks, 24 bits for nodes
+- 255.255.0.0 = 11111111.11111111.00000000.00000000 = 16 bits for networks, 16 bits for nodes
+- 255.255.255.0 = 11111111. 11111111.11111111.00000000 = 24 bits for networks, eight bits for nodes
+
+People who set up large networks determine what subnet mask works best based on the number of desired subnets or nodes. For more subnets, use more bits for the network; for more nodes per subnet, use more bits for the nodes. This may mean using non-standard mask values. For instance, if you want to use 10 bits for networks and 22 for nodes, your subnet mask value would require using 11000000 in the second octet, resulting in a subnet mask value of 255.192.0.0.
+
+Another important thing to note about IP addresses in a subnet is that the first and last addresses are reserved. The first address identifies the subnet itself, and the last address identifies the broadcast address for systems on that subnet.
+
+See the sidebar on the previous page for a look at how all this information comes together to form your IP address. For even more information about IP addresses, the Internet and related networking topics, head on to the next page.
+
+
+# TCP/IP (Transmission Control Protocol/Internet Protocol)
+
+TCP/IP, or the Transmission Control Protocol/Internet Protocol, is a suite of communication protocols used to interconnect network devices on the internet. TCP/IP can also be used as a communications protocol in a private computer network (an intranet or an extranet).
+
+The entire Internet Protocol suite -- a set of rules and procedures -- is commonly referred to as TCP/IP, though others are included in the suite. The TCP/IP protocol suite functions as an abstraction layer between internet applications and the routing/switching fabric.
+
+TCP/IP specifies how data is exchanged over the internet by providing end-to-end communications that identify how it should be broken into packets, addressed, transmitted, routed and received at the destination. TCP/IP requires little central management, and it is designed to make networks reliable, with the ability to recover automatically from the failure of any device on the network.
+
+The two main protocols in the Internet Protocol suite serve specific functions. TCP defines how applications can create channels of communication across a network. It also manages how a message is assembled into smaller packets before they are then transmitted over the internet and reassembled in the right order at the destination address.
+
+IP defines how to address and route each packet to make sure it reaches the right destination. Each gateway computer on the network checks this IP address to determine where to forward the message.
+
+A subnet mask is what tells a computer, or other network device, what portion of the IP address is used to represent the network and what part is used to represent hosts (other computers) on the network.
+
+
+A Network Address Translator (NAT) is the virtualization of Internet Protocol addresses. NAT helps improve security and decrease the number of IP addresses an organization needs.
+
+Common types of TCP/IP include the following:
+
+- HTTP (Hyper Text Transfer Protocol) handles the communication between a web server and a web browser.
+- HTTPS (Secure HTTP) handles secure communication between a web server and a web browser.
+- FTP (File Transfer Protocol) handles transmission of files between computers.
+
+## How TCP/IP works
+
+TCP/IP uses the client-server model of communication in which a user or machine (a client) is provided a service (like sending a webpage) by another computer (a server) in the network.
+
+Collectively, the TCP/IP suite of protocols is classified as stateless, which means each client request is considered new because it is unrelated to previous requests. Being stateless frees up network paths so they can be used continuously.
+
+The transport layer itself, however, is stateful. It transmits a single message, and its connection remains in place until all the packets in a message have been received and reassembled at the destination.
+
+The TCP/IP model differs slightly from the seven-layer Open Systems Interconnection (OSI) networking model designed after it. The OSI reference model defines how applications can communicate over a network.
+TCP/IP model layers
+
+TCP/IP functionality is divided into four layers, each of which include specific protocols:
+
+- The application layer provides applications with standardized data exchange. Its protocols include the HTTP, FTP, Post Office Protocol 3 (POP3), Simple Mail Transfer Protocol (SMTP) and Simple Network Management Protocol (SNMP). At the application layer, the payload is the actual application data.
+- The transport layer is responsible for maintaining end-to-end communications across the network. TCP handles communications between hosts and provides flow control, multiplexing and reliability. The transport protocols include TCP and User Datagram Protocol (UDP), which is sometimes used instead of TCP for special purposes.
+- The network layer, also called the internet layer, deals with packets and connects independent networks to transport the packets across network boundaries. The network layer protocols are the IP and the Internet Control Message Protocol (ICMP), which is used for error reporting.
+- The physical layer, also known as the network interface layer or data link layer, consists of protocols that operate only on a link -- the network component that interconnects nodes or hosts in the network. The protocols in this lowest layer include Ethernet for local area networks (LANs) and the Address Resolution Protocol (ARP).
+
+### Importance of TCP/IP
+
+TCP/IP is nonproprietary and, as a result, is not controlled by any single company. Therefore, the Internet Protocol suite can be modified easily. It is compatible with all operating systems, so it can communicate with any other system. The Internet Protocol suite is also compatible with all types of computer hardware and networks
+
+TCP/IP is highly scalable and, as a routable protocol, can determine the most efficient path through the network. It is widely used in current internet architecture.
+The history of TCP/IP
+
+The Defense Advanced Research Projects Agency (DARPA), the research branch of the U.S. Department of Defense, created the TCP/IP model in the 1970s for use in ARPANET, a wide area network that preceded the internet. TCP/IP was originally designed for the Unix operating system, and it has been built into all of the operating systems that came after it.
+
+The TCP/IP model and its related protocols are now maintained by the Internet Engineering Task Force.
+TCP/IP vs. OSI model
+
+TCP/IP and OSI are the most widely used communication networking protocols. The main difference is that OSI is a conceptual model that's not practically used for communication. Rather, it defines how applications can communicate over a network. TCP/IP, on the other hand, is widely used to establish links and network interaction.
+
+The TCP/IP protocols lay out standards on which the internet was created, while the OSI model provides guidelines on how communication has to be done. Therefore, TCP/IP is a more practical model.
+
+The TCP/IP and OSI models have similarities and differences. The main similarity is in the way they are constructed as both use layers, although the TCP/IP consists of just four layers, while the OSI model consists of seven layers.
+
+These are the seven layers of the OSI model:
+
+- Layer 7, the application layer, lets the user (software or human) interact with the application or network when the user wants to read messages, transfer files or engage in other network-related activities.
+- Layer 6, the presentation layer, translates or formats data for the application layer based on the semantics or syntax that the app accepts.
+- Layer 5, the session layer, sets up, coordinates and terminates conversations between apps.
+- Layer 4, the transport layer, handles transferring data across a network and providing error-checking mechanisms and data flow controls.
+- Layer 3, the network layer, moves data into and through other networks.
+- Layer 2, the data-link layer, handles problems that occur as a result of bit transmission errors.
+- Layer 1, the physical layer, transports data using electrical, mechanical or procedural interfaces.
+
+The upper layer for both the TCP/IP model and the OSI model is the application layer. Although this layer performs the same tasks in each model, those tasks may vary depending on the data each receives.
+
+
+The functions performed in each model are also similar because each uses a network layer and transport to operate. The TCP/IP and OSI models are each mostly used to transmit data packets. Although they will do so by different means and by different paths, they will still reach their destinations.
+
+The similarities between the TCP/IP model and the OSI model include the following:
+
+- They are both logical models.
+- They define networking standards.
+- They divide the network communication process in layers.
+- They provide frameworks for creating and implementing networking standards and devices.
+- They enable one manufacturer to make devices and network components that can coexist and work with the devices and components made by other manufacturers.
+
+The differences between the TCP/IP model and the OSI model include the following:
+
+- TCP/IP uses just one layer (application) to define the functionalities of the upper layers, while the OSI model uses three layers (application, presentation and session).
+- The TCP/IP model uses one layer (link) to define the functionalities of the bottom layers, while the OSI uses two layers (physical and data link).
+- The TCP/IP model use the internet layer to define the routing standards and protocols, while OSI uses the network layer.
+- The TCP/IP header size is 20 bytes while the OSI header is 5 bytes.
+- The TCP/IP model is a protocol-oriented standard, whereas the OSI model is a generic model based on the functionalities of each layer.
+- TCP/IP follows a horizontal approach, while OSI follows a vertical approach.
+- In the TCP/IP suite, the protocols were developed first, and then the model was developed. In OSI, the model was developed first, and then the protocols in each layer were developed.
+- TCP/IP helps establish a connection between different types of computers, whereas the OSI model helps standardize routers, switches, motherboards and other hardware.
+
+### Uses of TCP/IP
+
+TCP/IP can be used to provide remote login over the network, for interactive file transfer, to deliver email, to deliver webpages over the network and to remotely access a server host's file system.
+Pros and cons of TCP/IP
+
+The advantages of using the TCP/IP model include the following:
+
+- helps establish a connection between different types of computers;
+- works independently of the operating system;
+- supports many routing protocols;
+- has client-server architecture that is highly scalable;
+- can be operated independently;
+- supports several routing protocols; and
+- is lightweight and doesn't place unnecessary strain on a network or computer.
+
+The disadvantages of TCP/IP include the following:
+
+- complicated to set up and manage;
+- transport layer doesn't guarantee delivery of packets;
+- not easy to replace protocols in TCP/IP;
+- doesn't clearly separate the concepts of services, interfaces and protocols so not good for describing new technologies in new networks; and
+- especially vulnerable to a SYN (synchronization) attack, which is a type of denial-of-service attack in which a bad actor uses TCP/IP protocol.
